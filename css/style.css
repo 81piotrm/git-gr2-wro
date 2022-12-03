@@ -1,0 +1,128 @@
+/* Ogólne reguły CSS - komentarz */
+
+* {
+  box-sizing: border-box;
+  /* poczytać w domu */
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* HOMEWORK: wykorzystaj fonts.google.com i dodaj wybrany font z zewnęt. pliku */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+#container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 30px black; /* przeanalizować działanie box-shadow w CSS*/
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* brand */
+.brand a,
+.brand img {
+  display: block;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Pseudoklasa */
+
+nav ul li a:hover {
+  color: white;
+  background-color: black;
+}
+
+.slider img {
+  display: block;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  padding: 30px;
+  width: 70%;
+}
+
+article img {
+  padding: 0 200px 0;
+}
+
+/* Aside */
+aside {
+  width: 30%;
+  padding: 20px;
+  background-color: lightgrey;
+  border-left: 1px solid black;
+}
+
+.widget {
+  margin-bottom: 40px;
+}
+
+.widget img {
+  float: left;
+  margin: 0 10px 5px 0;
+}
+
+.links ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px dotted black;
+}
+
+footer p {
+  margin: 0;
+  text-shadow: 1px 1px grey;
+}
